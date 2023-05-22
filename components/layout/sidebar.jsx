@@ -43,23 +43,39 @@ const Sidebar = () => {
               <ul className="mainnav__menu nav flex-column">
                 <li className="nav-item has-sub">
                   <Link href="#" className="nav-link">
-                    <Image src="/assets/img/icon/tibcoServer.png" alt="TIBCO Server" width={16} height={16} />
+                    <Image
+                      src="/assets/img/icon/tibcoServer.png"
+                      alt="TIBCO Server"
+                      width={16}
+                      height={16}
+                    />
                     <span className="nav-label ms-1">TIBCO 서버 관리</span>
                   </Link>
                 </li>
 
                 <li className="nav-item has-sub">
                   <Link href="#" className="mininav-toggle nav-link collapsed">
-                    <Image src="/assets/img/icon/ems.png" alt="EMS Server" width={16} height={16} />
+                    <Image
+                      src="/assets/img/icon/ems.png"
+                      alt="EMS Server"
+                      width={16}
+                      height={16}
+                    />
                     <span className="nav-label ms-1">EMS</span>
                   </Link>
 
                   <ul className="mininav-content nav collapse">
                     {TIBCO_SERVER_EMS_LIST.map((data) => (
                       <li className="nav-item" key={data.title}>
-                        <a href={data.url} className="nav-link mininav-toggle collapsed">
+                        <a
+                          href={data.url}
+                          className="nav-link mininav-toggle collapsed"
+                        >
                           <i className="pli-home fs-5 me-2"></i>
-                          <span className="nav-label mininav-content ms-1" style={{ color: "#666666" }}>
+                          <span
+                            className="nav-label mininav-content ms-1"
+                            style={{ color: "#666666" }}
+                          >
                             {data.title}
                           </span>
                         </a>
@@ -148,7 +164,7 @@ const Sidebar = () => {
                     <a
                       className="nav-link disabled"
                       href="#"
-                      tabindex={-1}
+                      tabIndex={-1}
                       aria-disabled="true"
                     >
                       Lock screen
